@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Highmos</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="u-wrapper">
+			<div class="headerTop">
+				<img class="headerLogo" src="./img/logo.svg" alt="Highmos logo">
+				<button class="headerButton">
+					<img class="headerButton__svg" src="./img/bookmark.svg" alt="Bookmark">
+					Revervations
+				</button>
+			</div>
+			<h1 class="header__title">Travel is the only thing you buy that makes you richer</h1>
+			<button class="adventure">Adventure
+				<img class="adventure__img" src="./img/play.svg" alt="Play logo">
+			</button>
+			<form action="booking">
+				<div class="booking__container">
+					<div class="booking__inputs">
+						<label class="booking__label" for="check-in">Check in</label>
+						<input class="booking__input" type="date" id="check-in">
+					</div>
+					<div class="booking__inputs">
+						<label class="booking__label" for="check-out">Check out</label>
+						<input class="booking__input" type="date" id="check-out">
+					</div>
+					<div class="booking__inputs">
+						<label class="booking__label" for="Persons">Persons</label>
+						<select class="booking__input" name="personNumber" id="persons">
+							<option value="1">1 adult</option>
+							<option value="2">2 adults</option>
+							<option value="3">3 adults</option>
+							<option value="4">4 adults</option>
+						</select>
+					</div>
+				</div>
+				<button class="booking__button">BOOK NOW</button>
+			</form>
+		</div>
+	</header>
+	<!-- About us -->
+	<section class="about">
+		<div class="u-wrapper">
+			<div class="about__left">
+				<p class="about__subtitle">About us</p>
+				<h2 class="about__title">People don’t take trips, trips take people</h2>
+				<p class="about__paragraph">If you think your country does everything the right way and is revered by other nations, you’ll definitely have those notions put to the test when you enter another country. </p>
+				<img class="about__img" src="./img/aboutImg1.jpg" alt="Landscape photo">
+			</div>
+			<div class="about__right">
+				<p class="about__paragraph">Have you ever felt the rain on your skin in multiple countries? I have, and I’m here to tell you that it’s always a thrilling sensation each time it happens somewhere new. By traveling, I’ve learned to appreciate things that I would normally ignore.</p>
+				<p class="about__paragraph">Just like everyone else, I spend some of my days sitting on a couch watching television. Of course, these aren’t the moments that define me, nor are they what I think of when wandering through my favorite memories.</p>
+				<img class="about__img" src="./img/aboutImg2.jpg" alt="Landscape photo">
+			</div>
+		</div>
+	</section>
+</body>
+</html>
