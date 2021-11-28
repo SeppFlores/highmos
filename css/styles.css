@@ -5,6 +5,8 @@
 	--orange: #FE5303;
 	--lightgray: #BDBDBD;
 	--gray: #828282;
+	--background--gray: #F2F2F2;
+	--font--gray: #4F4F4F;
 }
 
 * {
@@ -22,7 +24,6 @@ html {
 .u-wrapper {
 	width: 92.27%;
 	margin: 0 auto;
-	z-index: 1;
 }
 
 .header {
@@ -30,7 +31,7 @@ html {
 	background-origin: border-box;
 	background-size: cover;
 	background-position: center;
-	padding-bottom: 10rem;
+	padding-bottom: 5rem;
 }
 
 .headerTop {
@@ -134,14 +135,14 @@ html {
 /* About */
 
 .about {
-	padding-bottom: 5rem;
+	padding: 5rem 0;
 }
 
 .about__subtitle {
 	font-family: var(--font2);
 	font-size: 1.6rem;
 	font-weight: 600;
-	margin: 10rem 0 3.6rem;
+	margin-bottom: 3.6rem;
 	color: var(--lightgray);
 }
 
@@ -164,4 +165,229 @@ html {
 	width: 100%;
 	height: auto;
 	margin-bottom: 3rem;
+}
+
+/* Accommodations */
+
+.accommodations {
+	padding: 5rem 0;
+}
+
+.accommodations__subtitle {
+	font-family: var(--font2);
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--lightgray);
+	margin-bottom: 2rem;
+}
+
+.accommodations__title {
+	font-size: 4.8rem;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+	color: var(--black);
+}
+
+.accommodations__see {
+	display: flex;
+	align-self: center;
+	font-family: var(--font2);
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--orange);
+	margin-bottom: 4rem;
+}
+
+.accommodations__arrow {
+	width: 2.4rem;
+	height: 2.4rem;
+	margin-left: 1.5rem;
+}
+
+.card__container{
+	display: grid;
+	grid-template: 
+	"a" 33rem
+	"b" 33rem
+	"c" 33rem
+	"d" 33rem
+	"e" 33rem / 1fr;
+	gap: 5rem;
+} 
+
+.a {
+	grid-area: a;
+	background-image: url('/img/roomImg1.jpg');
+	background-origin: border-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.b {
+	grid-area: b;
+	background-image: url('/img/roomImg2.jpg');
+	background-origin: border-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.c {
+	grid-area: c;
+	background-image: url('/img/roomImg3.jpg');
+	background-origin: border-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.d {
+	grid-area: d;
+	background-image: url('/img/roomImg4.jpg');
+	background-origin: border-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.e {
+	grid-area: e;
+	background-image: url('/img/roomImg5.jpg');
+	background-origin: border-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: .8rem;
+	padding: 5% 6.5%;
+}
+
+.card__title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--white);
+	margin-bottom: 1rem;
+}
+
+.card__text {
+	display: flex;
+	align-items: flex-end;
+}
+
+.card__price {
+	font-family: var(--font2);
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--white);
+	margin-right: .5rem;
+}
+
+.card__night {
+	font-family: var(--font2);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--white);
+} 
+
+/* Accomodation */
+
+.accomodation {
+	background-color: var(--background--gray);
+	padding: 5rem 0;
+}
+
+.accomodation__subtitle {
+	text-transform: uppercase;
+	font-family: var(--font2);
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--lightgray);
+	margin-bottom: 1.2rem;
+}
+
+.accomodation__title {
+	font-size: 4.8rem;
+	font-weight: 700;
+	color: var(--black);
+}
+
+.orange {
+	color: var(--orange);
+}
+
+.comment {
+	margin-top: 5rem;
+}
+
+.comment__top {
+	background-color: var(--white);
+	border-radius: 2rem 2rem 2rem 0;
+	padding: 3.2rem 2.9rem 9.5rem;
+	margin-bottom: 2.4rem;
+}
+
+.comment__title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--black);
+	margin-bottom: 2.4rem;
+}
+
+.comment__text {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2.88rem;
+	color: var(--font--gray);
+}
+
+.comment__bottom {
+	display: flex;
+}
+
+.comment__img {
+	width: 5.2rem;
+	height: 5.2rem;
+	margin-right: 2.2rem;
+}
+
+.comment__details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.comment__name {
+	font-family: var(--font2);
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--black);
+}
+
+.comment__country {
+	font-family: var(--font2);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--lightgray);
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	padding: 5rem 0;
+}
+
+.footer__designed {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--orange);
+	text-decoration: none;
+	margin-right: .5rem;
+}
+
+.footer__site {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--black);
+	text-decoration: none;
 }
