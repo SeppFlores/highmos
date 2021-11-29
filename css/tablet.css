@@ -1,0 +1,65 @@
+.header {
+	background-image: url('/img/headerImageDesktop.jpg');
+}
+
+.booking__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+}
+
+.booking__inputs {
+	padding: 0 2.4rem;
+	border-left: .1rem solid var(--border);
+}
+
+.booking__inputs:first-child {
+	border: none;
+	padding-left: 0;
+}
+
+.booking__inputs:last-child {
+	padding-right: 0;
+}
+
+/* About */
+
+.about {
+	display: grid;
+	grid-template: 
+	"a2 b2" auto / 1fr 1fr;
+	gap: 4rem;
+}
+
+.about__left {
+	grid-area: a2;
+}
+
+.about__img {
+	margin: 0;
+}
+
+.about__right {
+	grid-area: b2;
+	display: flex;
+	flex-direction: column;
+}
+
+.up {
+	order: -1;
+	margin-bottom: 3rem;
+}
+
+/* Accommodations */
+
+.card__container {
+	grid-template: 
+	"a a" 33rem
+	"b c" 33rem 
+	"d e" 33rem / 1fr 1fr ;
+	gap: 5rem;
+}
+
+.a {
+	background-image: url('/img/roomImg1Desktop.jpg');
+}

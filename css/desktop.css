@@ -1,0 +1,36 @@
+.booking {
+	display: flex;
+}
+
+.booking__container {
+	max-width: 100rem;
+}
+
+.booking__container {
+	margin-bottom: 0;
+}
+
+.booking__button {
+	margin-top: 0;
+	margin-left: 2rem;
+}
+
+/* Accommodations */
+
+.card__container {
+	grid-template: 
+	"a a b" 33rem
+	"c d e" 33rem / 1fr 1fr 1fr;
+	gap: 5rem;
+}
+
+/* Testimonials */
+
+.comment__container {
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.comment {
+	margin: 0 1.5rem;
+}
