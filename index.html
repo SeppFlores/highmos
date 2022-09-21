@@ -4,9 +4,62 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Highmos</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="hero">
+		<div class="hero__container">
+			<header class="header">
+				<img class="header__logo" src="https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/logo.svg?alt=media&token=dec48e99-d239-4908-a367-760b4f0de262" alt="logo">
 	
+				<button class="reservation">
+					<span class="reservation__bookmark material-symbols-outlined">bookmark</span>
+					reservation
+				</button>
+			</header>
+			<section class="main">
+				<h1 class="main-heading">Travel is the only thing you buy that makes you richer</h1>
+	
+				<button class="adventure">
+					adventure
+					<span class="adventure__circle material-symbols-outlined">play_circle</span>
+				</button>
+	
+				<form class="booking">
+					<div class="booking__inputs">
+						<div class="booking__input">
+							<label for="check-in">Check in</label>
+	
+							<input type="date" id="check-in">
+						</div>
+	
+						<div class="booking__out">
+							<label for="check-out">Check out</label>
+	
+							<input type="date" id="check-out">
+						</div>
+	
+						<div class="booking__input">
+							<label for="persons">Persons</label>
+	
+							<select name="personNumber" id="persons">
+								<option value="1">1 adults</option>
+								<option value="2">2 adults</option>
+								<option value="3">3 adults</option>
+								<option value="4">4 adults</option>
+							</select>
+						</div>
+					</div>
+	
+					<button class="booking__button">book now</button>
+				</form>
+			</section>
+		</div>
+	</div>
 </body>
 </html>
