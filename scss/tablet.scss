@@ -1,0 +1,22 @@
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImageDesktop.jpg?alt=media&token=9db58b91-f5d1-4137-9c79-89b139c4dc58');
+}
+
+.booking {
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+	&__div {
+		padding: 0 24px;
+		border-left: 1px solid #e8e8e8;
+	}
+	&__div:nth-child(1) {
+		border-left: none;
+		padding-left: 0;
+	}
+	&__div:nth-child(3) {
+		padding-right: 0;
+	}
+}

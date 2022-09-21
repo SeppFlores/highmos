@@ -5,11 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Highmos</title>
-	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
 </head>
 <body>
 	<div class="hero">
@@ -23,7 +25,7 @@
 				</button>
 			</header>
 			<section class="main">
-				<h1 class="main-heading">Travel is the only thing you buy that makes you richer</h1>
+				<h1 class="main__heading">Travel is the only thing you buy that makes you richer</h1>
 	
 				<button class="adventure">
 					adventure
@@ -31,23 +33,23 @@
 				</button>
 	
 				<form class="booking">
-					<div class="booking__inputs">
-						<div class="booking__input">
-							<label for="check-in">Check in</label>
+					<div class="booking__form">
+						<div class="booking__div">
+							<label class="booking__label" for="check-in">Check in</label>
 	
-							<input type="date" id="check-in">
+							<input class="booking__input" type="date" id="check-in">
 						</div>
 	
-						<div class="booking__out">
-							<label for="check-out">Check out</label>
+						<div class="booking__div">
+							<label class="booking__label" for="check-out">Check out</label>
 	
-							<input type="date" id="check-out">
+							<input class="booking__input" type="date" id="check-out">
 						</div>
 	
-						<div class="booking__input">
-							<label for="persons">Persons</label>
+						<div class="booking__div">
+							<label class="booking__label" for="persons">Persons</label>
 	
-							<select name="personNumber" id="persons">
+							<select class="booking__select" name="personNumber" id="persons">
 								<option value="1">1 adults</option>
 								<option value="2">2 adults</option>
 								<option value="3">3 adults</option>

@@ -9,9 +9,18 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImage.jpg?alt=media&token=2de47a10-acf1-4210-8909-d66801721dad");
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero__container {
   max-width: 1200px;
@@ -23,6 +32,81 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.reservation {
+  background-color: #FE5303;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.reservation__bookmark {
+  margin-right: 8px;
+}
+
+.main {
+  padding: 74px 0;
+}
+.main__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.adventure {
+  text-transform: capitalize;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.adventure__circle {
+  margin-left: 12px;
+  padding: 10px;
+  color: white;
+  font-size: 7.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.booking {
+  margin-top: 100px;
+}
+.booking__form {
+  background-color: white;
+  color: #222;
+  padding: 23px;
+  border-radius: 8px;
+  display: grid;
+  gap: 16px;
+}
+.booking__label {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 500;
+}
+.booking__input, .booking__select {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.booking__button {
+  background-color: #FE5303;
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
