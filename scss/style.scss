@@ -1,0 +1,30 @@
+$primary-color: #FE5303;
+$heading-font: 'Playfair Display', serif;
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 65.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImage.jpg?alt=media&token=2de47a10-acf1-4210-8909-d66801721dad');
+	color: white;
+	&__container{
+		max-width: 1200px;
+		padding: 24px;
+		margin: 0 auto;
+	}
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
