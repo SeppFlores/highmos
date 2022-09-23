@@ -1,3 +1,12 @@
+$primary-color: #FE5303;
+$heading-font: 'Playfair Display', serif;
+$space-xs: 8px;
+$space-sm: 12px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 48px;
+$space-2xl: 74px;
+
 .hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImageDesktop.jpg?alt=media&token=9db58b91-f5d1-4137-9c79-89b139c4dc58');
 }
@@ -19,4 +28,47 @@
 	&__div:nth-child(3) {
 		padding-right: 0;
 	}
+}
+
+// ABOUT US
+
+.about {
+	&__container{
+		max-width: 1200px;
+		// padding: $space-lg;
+		margin: 0 auto;
+	}
+	&__name {
+		text-transform: uppercase;
+		color: #bdbdbd;
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	&__content{
+		// margin-top: $space-lg;
+
+		display: grid;
+		// gap: $space-lg;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__left , &__right {
+		display: grid;
+		gap: $space-lg;
+	}
+	&__title {
+		// font-size: 4.8rem;
+		// font-family: $heading-font;
+		font-weight: 700;
+	}
+	&__p {
+		color: #828282;
+	}
+	&__img {
+		border-radius: 8px;
+		width: 100%;
+	}
+}
+
+.second {
+	order: -1;
 }
