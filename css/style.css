@@ -125,8 +125,12 @@ button {
   display: grid;
   gap: 48px;
 }
+.about__left, .about__right {
+  display: grid;
+  gap: 24px;
+}
 .about__title {
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }

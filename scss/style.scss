@@ -146,8 +146,12 @@ button {
 		display: grid;
 		gap: $space-xl;
 	}
+	&__left , &__right {
+		display: grid;
+		gap: $space-lg;
+	}
 	&__title {
-		font-size: 4.8rem;
+		font-size: 4rem;
 		font-family: $heading-font;
 		font-weight: 700;
 	}

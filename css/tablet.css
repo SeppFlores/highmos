@@ -19,33 +19,9 @@
   padding-right: 0;
 }
 
-.about__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.about__name {
-  text-transform: uppercase;
-  color: #bdbdbd;
-  font-weight: 500;
-  font-size: 1.6rem;
-}
 .about__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.about__left, .about__right {
-  display: grid;
-  gap: 24px;
-}
-.about__title {
-  font-weight: 700;
-}
-.about__p {
-  color: #828282;
-}
-.about__img {
-  border-radius: 8px;
-  width: 100%;
 }
 
 .second {
