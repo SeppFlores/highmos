@@ -46,8 +46,9 @@ button {
   display: flex;
   align-items: center;
 }
-.reservation__bookmark {
+.reservation__icon {
   margin-right: 8px;
+  font-size: 1.2rem;
 }
 
 .main {
@@ -64,8 +65,9 @@ button {
   color: white;
   display: flex;
   align-items: center;
+  font-size: 1.8rem;
 }
-.adventure__circle {
+.adventure__icon {
   margin-left: 12px;
   padding: 10px;
   color: white;
