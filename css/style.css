@@ -227,4 +227,75 @@ button {
   transition: transform 200ms ease-in-out 100ms;
 }
 
+.testimonials {
+  background-color: #f2f2f2;
+}
+.testimonials__container {
+  max-width: 1200px;
+  padding: 24px;
+  margin: 0 auto;
+}
+.testimonials__name {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.testimonials__title {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.testimonials__title strong {
+  color: #FE5303;
+}
+
+.feedback {
+  margin-top: 74px;
+  display: grid;
+  gap: 48px;
+}
+.feedback__dialog {
+  background-color: white;
+  padding: 48px 24px;
+  border-radius: 20px 20px 20px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Playfair Display", serif;
+}
+.feedback__title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feedback__content {
+  color: #4f4f4f;
+  line-height: 2.8rem;
+}
+
+.user {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 16px;
+}
+.user__img {
+  width: 100%;
+}
+.user__name {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.user__location {
+  color: #bdbdbd;
+  font-size: 1.2rem;
+}
+
+.footer {
+  font-family: "Playfair Display", serif;
+}
+.footer__container {
+  max-width: 1200px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */

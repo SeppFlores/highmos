@@ -57,3 +57,9 @@ $space-2xl: 74px;
 		grid-column: 1 / span 2;
 	}	
 }
+
+// TESTIMONIALS
+
+.feedback {
+	grid-template-columns: repeat(3,1fr);
+}

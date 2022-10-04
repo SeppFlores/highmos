@@ -263,3 +263,80 @@ button {
 		transition: transform 200ms ease-in-out 100ms;
 	}
 }
+
+// TESTIMONIALS
+
+.testimonials {
+	background-color: #f2f2f2;
+	&__container {
+		max-width: 1200px;
+		padding: $space-lg;
+		margin: 0 auto;
+	}
+	&__name{
+		text-transform: uppercase;
+		color: #bdbdbd;
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	&__title{
+		font-size: 4rem;
+		font-family: $heading-font;
+		font-weight: 700;
+	}
+	&__title strong{
+		color: $primary-color;
+	}
+}
+
+.feedback {
+	margin-top: $space-2xl;
+
+	display: grid;
+	gap: $space-xl;
+	&__dialog {
+		background-color: white;
+		padding: $space-xl $space-lg;
+		border-radius: 20px 20px 20px 0;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+		font-family: $heading-font;
+	}
+	&__title {
+		font-weight: 700;
+		margin-bottom: $space-md;
+	}
+	&__content {
+		color: #4f4f4f;
+		line-height: 2.8rem;
+	}
+}
+
+.user {
+	margin-top: $space-md;
+
+	display: grid;
+	grid-template-columns: 52px 1fr;
+	gap: $space-md;
+	&__img {
+		width: 100%;
+	}
+	&__name {
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	&__location {
+		color: #bdbdbd;
+		font-size: 1.2rem;
+	}
+}
+
+// FOOTER
+
+	.footer {
+		font-family: $heading-font;
+		&__container {
+			max-width: 1200px;
+			padding: $space-lg;
+			margin: 0 auto;
+		}
+	}
