@@ -143,4 +143,86 @@ button {
   width: 100%;
 }
 
+.accommodation__container {
+  max-width: 1200px;
+  padding: 24px;
+  margin: 0 auto;
+}
+.accommodation__name {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.accommodation__header {
+  margin-top: 16px;
+}
+.accommodation__title {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.accommodation__button {
+  color: #FE5303;
+  display: flex;
+  align-items: center;
+}
+.accommodation__icon {
+  margin-left: 12px;
+}
+
+.room__container {
+  margin-top: 24px;
+  display: grid;
+  gap: 48px;
+}
+.room__card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 380px;
+}
+.room__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  transition: opacity 200ms ease-in-out;
+}
+.room__card:hover::before {
+  opacity: 0;
+}
+.room__card:hover .room__name {
+  transform: translateX(calc(-100% - 24px));
+}
+.room__card:hover .room__price {
+  transform: translateX(calc(-100% - 24px));
+}
+.room__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.room__details {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+}
+.room__name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  transition: transform 200ms ease-in-out;
+}
+.room__price {
+  font-weight: 500;
+  transition: transform 200ms ease-in-out 100ms;
+}
+
 /*# sourceMappingURL=style.css.map */

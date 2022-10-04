@@ -6,4 +6,8 @@
   margin-left: 12px;
 }
 
+.room__container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*# sourceMappingURL=desktop.css.map */

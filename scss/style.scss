@@ -164,3 +164,99 @@ button {
 		width: 100%;
 	}
 }
+
+// ACCOMMODATION
+
+.accommodation {
+	&__container{
+		max-width: 1200px;
+		padding: $space-lg;
+		margin: 0 auto;
+	}
+	&__name {
+		text-transform: uppercase;
+		color: #bdbdbd;
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	&__header {
+		margin-top: $space-md;
+	}
+	&__title {
+		font-size: 4rem;
+		font-family: $heading-font;
+		font-weight: 700;
+	}
+	&__button {
+		color: $primary-color;
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		margin-left: $space-sm;
+	}
+}
+
+.room {
+	&__container {
+		margin-top: $space-lg;
+
+		display: grid;
+		gap: $space-xl;
+	}
+	&__card {
+		border-radius: 8px;
+		overflow: hidden;
+
+		position: relative;
+		color: white;
+
+		height: 380px;
+	}
+	&__card::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		background: linear-gradient(rgba(0 ,0 ,0 ,0), rgba(0 ,0 ,0 ,1));
+
+		transition: opacity 200ms ease-in-out;
+	}
+	&__card:hover::before {
+		opacity: 0;
+	}
+	&__card:hover .room__name {
+		transform: translateX(calc(-100% - $space-lg));
+	}
+	&__card:hover .room__price {
+		transform: translateX(calc(-100% - $space-lg));
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+		object-position: center;
+	}
+	&__details {
+		position: absolute;
+		bottom: $space-lg;
+		left: $space-md;
+	}
+	&__name {
+		font-family: $heading-font;
+		font-weight: 700;
+		font-size: 2.4rem;
+		margin-bottom: $space-sm;
+
+		transition: transform 200ms ease-in-out;
+	}
+	&__price{
+		font-weight: 500;
+
+		transition: transform 200ms ease-in-out 100ms;
+	}
+}

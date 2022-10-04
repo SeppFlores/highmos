@@ -28,4 +28,11 @@
   order: -1;
 }
 
+.room__container {
+  grid-template-columns: 1fr 1fr;
+}
+.room__col-2 {
+  grid-column: 1/span 2;
+}
+
 /*# sourceMappingURL=tablet.css.map */

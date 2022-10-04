@@ -5,3 +5,11 @@
 		margin-left: 12px;
 	}
 }
+
+// ACCOMMODATION
+
+.room {
+	&__container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
+}

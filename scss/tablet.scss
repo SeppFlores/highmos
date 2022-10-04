@@ -46,3 +46,14 @@ $space-2xl: 74px;
 .second {
 	order: -1;
 }
+
+// ACCOMMODATION
+
+.room {
+	&__container {
+		grid-template-columns: 1fr 1fr;
+	}
+	&__col-2 {
+		grid-column: 1 / span 2;
+	}	
+}
