@@ -1,5 +1,6 @@
 $primary-color: #FE5303;
 $heading-font: 'Playfair Display', serif;
+$button-font: 'Poppins', sans-serif;
 $space-xs: 8px;
 $space-sm: 12px;
 $space-md: 16px;
@@ -22,6 +23,8 @@ button {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+
+	font-family: $button-font;
 }
 
 .hero {
@@ -39,9 +42,35 @@ button {
 }
 
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	&__container {
+		max-width: 1200px;
+		padding: $space-sm $space-lg;
+		margin: 0 auto;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 100px;
+	}
+}
+
+.header--white {
+	background-color: white;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	
+	z-index: 1;
+	
+	transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+	path {
+		fill: $primary-color;
+
+		transition: fill 300ms ease-in-out;
+	}
 }
 
 .reservation {
@@ -124,6 +153,8 @@ button {
 		color: white;
 		font-weight: 500;
 		text-transform: uppercase;
+		font-family: $button-font;
+		font-size: 1.6rem;
 
 		margin-top: $space-sm;
 	}
@@ -192,6 +223,9 @@ button {
 	}
 	&__button {
 		color: $primary-color;
+		font-family: $button-font;
+		font-size: 1.8rem;
+
 		display: flex;
 		align-items: center;
 	}
@@ -202,7 +236,7 @@ button {
 
 .room {
 	&__container {
-		margin-top: $space-lg;
+		margin-top: $space-xl;
 
 		display: grid;
 		gap: $space-xl;
@@ -259,6 +293,7 @@ button {
 	}
 	&__price{
 		font-weight: 500;
+		font-size: 1.6rem;
 
 		transition: transform 200ms ease-in-out 100ms;
 	}
@@ -303,11 +338,14 @@ button {
 	}
 	&__title {
 		font-weight: 700;
+		font-size: 1.8rem;
+
 		margin-bottom: $space-md;
 	}
 	&__content {
 		color: #4f4f4f;
 		line-height: 2.8rem;
+		font-size: 1.6rem;
 	}
 }
 
@@ -333,8 +371,10 @@ button {
 // FOOTER
 
 	.footer {
-		font-family: $heading-font;
 		&__container {
+			font-family: $heading-font;
+			font-size: 1.6rem;
+
 			max-width: 1200px;
 			padding: $space-lg;
 			margin: 0 auto;

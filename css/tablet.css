@@ -2,6 +2,17 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImageDesktop.jpg?alt=media&token=9db58b91-f5d1-4137-9c79-89b139c4dc58");
 }
 
+.header__logo {
+  width: 155px;
+}
+
+.reservation {
+  font-size: 1.6rem;
+}
+.reservation__icon {
+  font-size: 1.8rem;
+}
+
 .booking__form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

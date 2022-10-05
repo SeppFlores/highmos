@@ -11,6 +11,19 @@ $space-2xl: 74px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('https://firebasestorage.googleapis.com/v0/b/highmos-6b8c4.appspot.com/o/headerImageDesktop.jpg?alt=media&token=9db58b91-f5d1-4137-9c79-89b139c4dc58');
 }
 
+.header {
+	&__logo {
+		width: 155px;
+	}
+}
+
+.reservation {
+	font-size: 1.6rem;
+	&__icon {
+		font-size: 1.8rem;
+	}
+}
+
 .booking {
 	&__form {
 		display: grid;
